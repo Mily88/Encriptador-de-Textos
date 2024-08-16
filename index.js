@@ -4,6 +4,7 @@ function encriptar(){
     let parrafo = document.getElementById("parrafo");
     let candado = document.getElementById("candado");
 
+    if (!validar(texto)) return;
 
     let textoCifrado = texto
      .replace(/e/gi, "enter")
@@ -50,4 +51,3 @@ function desencriptar(){
         alert("Debes ingresar algún texto");
     }
 }
-
