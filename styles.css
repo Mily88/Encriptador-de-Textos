@@ -64,6 +64,31 @@
     flex-grow: 0;
 }
 
+.nombre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 14.25%;
+    left: 85.75%;  
+    top: 96.9%;
+}
+
+.nombre p{
+    font-family: "Grey Qo", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50%;
+    color: #000000;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
 .botones{
     display: flex;
     flex-direction: row;
@@ -173,7 +198,7 @@
     top: 15%;
 }
 
-/*Estilo para telefono*/
+/*Estilo para telefono y tablet*/
 @media(max-width: 57.5em){
     .container{
         display: flex;
@@ -187,25 +212,34 @@
     .texto{
         width: 80%;
         height: 60%;
-        left: 10%;
+        left: 13%;
         top: 10%;
     }
 
     .terminos{
         width: 80%;
-        left: 10%;
-        top: 65%;
+        left: 15%;
+        top: 68%;
     }
 
     .terminos p{
-        font-size: 16px;
+        font-size: 12px;
+    }
 
+        .nombre{
+        width: 3%;
+        left: 69%;
+        top: 97%;
+    }
+
+    .nombre p{
+        font-size: 12px;
     }
 
     .botones{
         width: 80%;
-        left: 10%;
-        top: 70%;
+        left: 15%;
+        top: 71%;
     }
 
     .btn-encriptar,
@@ -224,8 +258,8 @@
     .encriptado{
         width: 80%;
         height: 15%;
-        left: 10%;
-        top: 80%;
+        left: 13%;
+        top: 78%;
     }
 
     .mensaje-encriptado{

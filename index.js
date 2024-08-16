@@ -12,7 +12,7 @@ function encriptar(){
      .replace(/o/gi, "ober")
      .replace(/u/gi, "ufat");
               
-    if (texto.lenght != 0){
+    if (texto.length != 0){
         document.getElementById("texto").value = textoCifrado;
         tituloMensaje.textContent = "Texto encriptado con éxito";
         parrafo.textContent = "";
@@ -38,13 +38,13 @@ function desencriptar(){
     .replace(/ober/gi, "o")
     .replace(/ufat/gi, "u");
     
-    if (texto.lenght != 0){
+    if (texto.length != 0){
         document.getElementById("texto").value = textoCifrado;
         tituloMensaje.textContent = "Texto desencriptado con éxito";
         parrafo.textContent = "";
         candado.src = "./imagenes/candado2.png";
     } else {
-        candado.src = "./imagenes/candado2.png";
+        candado.src = "./imagenes/candado4.png";
         tituloMensaje.textContent = "Ningun mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
         alert("Debes ingresar algún texto");
